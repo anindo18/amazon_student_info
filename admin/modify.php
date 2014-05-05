@@ -29,7 +29,7 @@
     <td><h1 align="center" class="heading"><img src="images/cooltext457948700.png" width="747" height="58" alt="Welcome to Admin Panel" /></h1>
   <p align="center">
     <?php 
-	 	 $link=mysqli_connect("localhost","root","root") or die("Cannot Connect to the database!");
+	 	 $link=mysqli_connect("localhost","root","password") or die("Cannot Connect to the database!");
 	
 	 mysqli_select_db($link,"department") or die ("Cannot select the database!");
 	 $query="SELECT * FROM students";
