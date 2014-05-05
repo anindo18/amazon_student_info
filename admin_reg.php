@@ -75,7 +75,7 @@ and open the template in the editor.
         $master_pass = $_POST['master_pass'];
         if (isset($_POST["master_usn"]) && isset($_POST["master_pass"]))
        {
-           $con=mysqli_connect("localhost","root","root","department");
+           $con=mysqli_connect("localhost","root","password","department");
             // Check connection
         if (mysqli_connect_errno())
          {
@@ -184,7 +184,7 @@ and open the template in the editor.
         {
              if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["fname"]) && isset($_POST["email"]) && isset($_POST["con_num"]) && isset($_POST["occupation"]))
        {
-           $con=mysqli_connect("localhost","root","root","department");
+           $con=mysqli_connect("localhost","root","password","department");
             // Check connection
         if (mysqli_connect_errno())
          {
