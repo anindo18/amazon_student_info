@@ -35,7 +35,7 @@
 	 $reg=$_REQUEST['reg'];
 	 $dept=$_REQUEST['dept']; 
 	 
-	 $link=mysqli_connect("localhost","root","root") or die("Cannot Connect to the database!");
+	 $link=mysqli_connect("localhost","root","password") or die("Cannot Connect to the database!");
 	
 	 mysqli_select_db($link,"department") or die ("Cannot select the database!");
 	 $query="UPDATE students SET sname='".$sname."', rollno='".$roll."', regno='".$reg."', dname='".$dept."' WHERE id='".$id."'";
