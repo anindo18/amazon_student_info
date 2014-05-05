@@ -107,7 +107,7 @@
         
             if (isset($_POST["username"]) && isset($_POST["password"]))
        {
-           $con=mysqli_connect("localhost","root","root","department");
+           $con=mysqli_connect("localhost","root","password","department");
             // Check connection
         if (mysqli_connect_errno())
          {
