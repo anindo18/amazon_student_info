@@ -31,7 +31,7 @@
     <?php 
 	 $id=$_REQUEST['id']; 
 	 
-	 $link=mysqli_connect("localhost","root","root") or die("Cannot Connect to the database!");
+	 $link=mysqli_connect("localhost","root","password") or die("Cannot Connect to the database!");
 	
 	 mysqli_select_db($link,"department") or die ("Cannot select the database!");
 	 $query="SELECT * FROM students WHERE id='".$id."'";
