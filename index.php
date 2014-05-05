@@ -30,7 +30,7 @@
       <h1 align="center" class="heading"><img src="admin/images/cooltext457954659.png" width="830" height="51" alt="Welcome to Site" /></h1>
       <p align="center">
         <?php 
-	 	 $link=mysqli_connect("localhost","root","root") or die("Cannot Connect to the database!");
+	 	 $link=mysqli_connect("localhost","root","password") or die("Cannot Connect to the database!");
 	
 	 mysqli_select_db($link,"department") or die ("Cannot select the database!");
 	 $query="SELECT * FROM students";
