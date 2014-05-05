@@ -34,7 +34,7 @@
 	 $reg=$_REQUEST['reg'];
 	 $dept=$_REQUEST['dept']; 
 	 
-	 $link=mysqli_connect("localhost","root","root") or die("Cannot Connect to the database!");
+	 $link=mysqli_connect("localhost","root","password") or die("Cannot Connect to the database!");
 	
 	 mysqli_select_db($link,"department") or die ("Cannot select the database!");
 	 $query="INSERT INTO students (sname, rollno, regno, dname) values('".$sname."', '".$roll."', '".$reg."', '".$dept."')";
